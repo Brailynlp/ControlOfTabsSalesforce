@@ -1,0 +1,18 @@
+<template>
+    <div class="card">
+        <div class="card-header">
+            New Related Case
+        </div>
+        <div class="card-content">
+            <lightning-button
+                label="Create"
+                onclick={handleCreateNewRelatedCase}
+                class="action-button">
+            </lightning-button>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">Error: {error}</p>
+            </template>
+        </div>
+    </div>
+</template>
